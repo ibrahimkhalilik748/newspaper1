@@ -1,0 +1,121 @@
+.NavigationBar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    margin-top: -100px;
+}
+.navbarDark{
+    background-color: #242526;
+    color: white;
+}
+.navbarLight{
+    background-color: #FFFFFF;
+    color:black;
+}
+.name{
+    display: none;
+}
+.NavigationBar ul a{
+    padding:10px;
+    margin: 0px 5px;
+    border-radius:5px;
+}
+ul{
+    margin: 0 auto;
+}
+.aLight a:hover{
+    color: #000000;
+    transition: 0.3s;
+    background-color: #dadada87;
+}
+.aDark a:hover{
+    background-color: #3A3B3C;
+    transition: 0.3s;
+    color: white;
+}
+/* .NavigationBar ul a:hover{
+    background-color: #3A3B3C;
+    transition: 0.2s;
+    color: white;
+} */
+.NavigationBar .navBox{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+}
+.NavigationBar ul li{
+    float: left;
+}
+
+marquee{
+    background-color:#39c6ff;
+    height:40px;
+    color:white;
+    display:block;
+    font-size:18px;
+}
+.header{
+    width: 100%;
+    /* background-color:black */
+}
+.dp{
+    width:46%;
+    border-radius: 25px;
+    /* border: 1px solid white; */
+}
+
+@media screen and (max-width: 1000px) {
+    .NavigationBar ul li{
+        float: none;
+        margin: 0 auto;
+    }
+    .name{
+        display: block;
+        /* margin-top: 10px; */
+        padding: 10px;
+    }
+    .marquee{
+        display: none !important;
+    }
+    .none{
+        display: none !important;
+    }
+    .header{
+        width: 100%;
+        /* background-color:black; */
+        padding-bottom: 10px;
+    }
+    .NavigationBar{
+        height: 80px;
+        margin-top: -80px;
+    }
+    .DP-bg{
+        padding: 10px;
+    }
+    .DP-light{
+        background-color: white;
+    }
+    .DP-dark{
+        background-color: #18191A;
+    }
+  }
+
+@media screen and (max-width: 1250px) {
+    .NavigationBar ul a{
+        padding: 10px 5px;
+        margin: 0px 5px;
+        border-radius:5px;
+    }
+}
+/* @media screen and (max-width: 1000px - 1100px) {
+    .NavigationBar ul a{
+        padding: 10px 5px;
+        margin: 0px 2px;
+        border-radius:5px;
+    }
+} */

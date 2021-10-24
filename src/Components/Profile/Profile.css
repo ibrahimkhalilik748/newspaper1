@@ -1,0 +1,58 @@
+.profile{
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.profile .DP{
+    width: 10%;
+    /* border: 1px solid black; */
+    border-radius: 55px;
+}
+.profile .bkash{
+    padding: 10px 320px;
+    line-height: 35px;
+}
+
+.img-box{
+    width: 100%;
+}
+.button-dark{
+    text-align:right;
+    padding: 20px;
+}
+.input{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: black; */
+    color: gray;
+    border-radius:10px;
+}
+textarea{
+    width: 37%;
+    height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input{
+        width: 90%;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        /* background-color: black; */
+        color: gray;
+        border-radius:10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .profile .DP{
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 77px;
+    }
+    /* .profile .bkash{
+        padding: 10px 30px;
+        line-height: 35px;
+    } */
+}

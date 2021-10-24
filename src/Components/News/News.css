@@ -1,0 +1,13 @@
+.news{
+    width: 100%;
+    text-align: left;
+}
+.news .text-aria{
+    width: 70%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .news .text-aria{
+        width: 90%;
+    }
+}
