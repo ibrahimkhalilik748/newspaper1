@@ -46,7 +46,7 @@ const Profile = () => {
         })
             .then(res => {
                 console.log('server side response', res)
-                window.location.href = "/"
+                // window.location.href = "/"
             })
         e.target.reset()
     };

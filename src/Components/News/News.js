@@ -22,9 +22,12 @@ const News = () => {
                     <div className=" ">
                         <h1>{news.title}</h1>
                         <br />
-                        <img className="img-fluid" src={news.imageURL} alt="" />
-                        <p className="mt-2"><b>@{news.name}</b></p>
-                        <p><small>Published: {news.date}, {news.time}</small> </p>
+                        <img className="img-fluid d-block" src={news.imageURL} alt="" />
+                        <br />
+                        <div className="person d-block">
+                            <img className=""src={news.photoURL} alt="" /><p className="mt-2 pl-1 d-inline"><b>{news.name}</b></p>
+                        </div>
+                        <p className=""><small>Published: {news.date}, {news.time}</small> </p>
                         <p className="text-aria">{news.textarea}</p>
                     </div>
                 )
