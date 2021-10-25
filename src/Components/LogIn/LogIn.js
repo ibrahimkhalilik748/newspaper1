@@ -13,7 +13,7 @@ const LogIn = () => {
     // console.log(loggedInUser)
     const history = useHistory(); 
     const location = useLocation();
-    const { from } = location.state || { from: { pathname: "/" } };
+    const { from } = location.state || { from: { pathname: "/profile" } };
 
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);

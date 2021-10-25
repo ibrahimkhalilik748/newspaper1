@@ -26,25 +26,25 @@ const Sports = () => {
                         <div className="col-md-7">
                             {
                                 first0.map(news =>
-                                    <div className="firstCard box-bg">
+                                    <div  className={dark ? "firstCard box-bg-dark sbcfpzgs" : "firstCard box-bg-light sbcfpzgs"}>
                                         <Link to={"/news/" + news._id}>
                                             <div className="img m-auto">
                                                 <img className="box-img" src={news.imageURL} alt="" />
                                             </div>
                                             <div className="">
                                                 <h2 className="p-2">{news.title}</h2>
-                                                <p className="p-1">{news.textarea}</p>
+                                                {/* <p className="p-1">{news.textarea}</p> */}
                                             </div>
                                         </Link>
                                     </div>
                                 )
                             }
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-5"> 
                             {
                                 first3.map(news =>
                                     <Link to={"/news/" + news._id}>
-                                        <div className="row box-tow box-bg">
+                                        <div className={dark ? "box-bg-dark row box-tow" : "box-bg-light row box-tow"}>
 
                                             <div className="col-6">
                                                 <img className="box-img" src={news.imageURL} alt="" />
@@ -63,10 +63,10 @@ const Sports = () => {
                     <div className="box-three mt-5">
                         {
                             news.map(news =>
-                                <div className="box-bg">
+                                <div className={dark ? "box-bg-dark" : "box-bg-light"}>
                                     <Link to={"/news/" + news._id}>
                                         <img className="box-img" src={news.imageURL} alt="" />
-                                        <h5>{news.title}</h5>
+                                        <h5 className="p-1">{news.title}</h5>
                                     </Link>
                                 </div>
                             )
