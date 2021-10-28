@@ -23,7 +23,7 @@ const Sports = () => {
         <div className="optionTop container">
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Sports|News</title>
+                <title>Sports | News</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <div className={dark ? "App dark aDark" : "App light aLight"}>

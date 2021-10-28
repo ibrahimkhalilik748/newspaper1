@@ -23,7 +23,7 @@ const Opinion = () => {
         <div className="optionTop container">
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Opinion|News</title>
+                <title>Opinion | News</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <div className={dark ? "App dark aDark" : "App light aLight"}>

@@ -23,7 +23,7 @@ const Lifestyle = () => {
         <div className="optionTop container">
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Lifestyle|News</title>
+                <title>Lifestyle | News</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <div className={dark ? "App dark aDark" : "App light aLight"}>
