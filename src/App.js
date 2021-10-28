@@ -10,6 +10,7 @@ import Home from './Components/Home/Home';
 import LogIn from './Components/LogIn/LogIn';
 import { useState, createContext } from 'react';
 import Footer from './Components/Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 
 export const userContext = createContext();
@@ -20,7 +21,12 @@ function App() {
   const [light, setlight] = useState([]);
   return (
     <div className={dark ? "App dark" : "App light"}>
-      <userContext.Provider value={{ value:[loggedInUser,setLoggedInUser],value1:[newUser, setNewUser], value2:[dark, setDark], value3:[light, setlight] }}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Newspaper</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+      <userContext.Provider value={{ value: [loggedInUser, setLoggedInUser], value1: [newUser, setNewUser], value2: [dark, setDark], value3: [light, setlight] }}>
         <Router>
           <Home></Home>
           {/* <Switch>

@@ -4,14 +4,15 @@ import 'firebase/compat/auth'; //v9
 import { useHistory, useLocation } from 'react-router';
 import { userContext } from '../../App';
 import firebaseConfig from './firebaseConfig';
-import './LogIn.css'
+import './LogIn.css';
+import {Helmet} from "react-helmet";
 
 const LogIn = () => {
     const { value, value1 } = useContext(userContext);
     const [loggedInUser, setLoggedInUser] = value;
     const [newUser, setNewUser] = value1;
     // console.log(loggedInUser)
-    const history = useHistory(); 
+    const history = useHistory();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/profile" } };
 
@@ -36,6 +37,11 @@ const LogIn = () => {
     }
     return (
         <div className="LogIn">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Log In</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="container text-center"><br /><br /><br /><br /><br /><br /><br />
                 <button className="btn button btn-outline-info pb-2" onClick={handleGoogleLogIn}><img style={{ width: '20%', paddingRight: '20px' }} src="https://symbols-electrical.getvecta.com/stencil_82/45_google-icon.d8d982f8a1.svg" alt="" />{newUser ? 'Log Out' : 'Log In to Google'}</button>
             </div>

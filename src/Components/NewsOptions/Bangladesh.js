@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { userContext } from '../../App';
 import '../NewsStyles/NewsStyle.css'
@@ -20,13 +21,18 @@ const Bangladesh = () => {
     }, [])
     return (
         <div className="optionTop container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Bangladesh | News</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className={dark ? "App dark aDark" : "App light aLight"}>
                 <div className="container pt-3">
                     <div className="row">
                         <div className="col-md-7">
                             {
                                 first0.map(news =>
-                                    <div  className={dark ? "firstCard box-bg-dark sbcfpzgs" : "firstCard box-bg-light sbcfpzgs"}>
+                                    <div className={dark ? "firstCard box-bg-dark sbcfpzgs" : "firstCard box-bg-light sbcfpzgs"}>
                                         <Link to={"/news/" + news._id}>
                                             <div className="img m-auto">
                                                 <img className="box-img" src={news.imageURL} alt="" />
@@ -40,7 +46,7 @@ const Bangladesh = () => {
                                 )
                             }
                         </div>
-                        <div className="col-md-5"> 
+                        <div className="col-md-5">
                             {
                                 first3.map(news =>
                                     <Link to={"/news/" + news._id}>

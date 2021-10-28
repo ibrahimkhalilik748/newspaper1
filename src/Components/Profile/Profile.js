@@ -3,6 +3,7 @@ import './Profile.css';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
 import { userContext } from '../../App';
+import { Helmet } from 'react-helmet';
 
 const Profile = () => {
     const { value, value2 } = useContext(userContext);
@@ -69,6 +70,11 @@ const Profile = () => {
     }
     return (
         <div className="optionTop container profile">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Profile</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="button-dark">
                 <button className={dark ? "btn btn-outline-light" : "btn btn-outline-dark"} onClick={() => darkMode()} >{dark ? 'Light Mode' : 'Dark Mode'}</button>
             </div>

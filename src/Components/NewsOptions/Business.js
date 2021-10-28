@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { userContext } from '../../App';
 import '../NewsStyles/NewsStyle.css'
@@ -20,6 +21,11 @@ const Business = () => {
     }, [])
     return (
         <div className="optionTop container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Business|News</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className={dark ? "App dark aDark" : "App light aLight"}>
                 <div className="container pt-3">
                     <div className="row">
